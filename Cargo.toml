@@ -1,0 +1,19 @@
+[package]
+name = "rust-clang-doc-generator"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[[bin]]
+name = "rust-clang-doc-generator"
+path = "main.rs"
+
+[dependencies]
+clang = { version = "2.0.0", features = ["clang_10_0"] }
+clap = { version = "4.0.10", features = ["derive"] }
+glob = "0.3.0"
+markdown-gen = "1.2.1"
+proc-macro2 = { version = "1.0.46", features = ["span-locations"] }
+roxmltree = "0.15.0"
+syn = { version = "1.0.101", features = ["visit", "full"] }
+# xmltree = "0.10.3"
